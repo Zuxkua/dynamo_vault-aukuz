@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+export RPC_ENDPOINT=http://127.0.0.1:8545
+export KEY_PRIVATE=0xdd23ca549a97cb330b011aebb674730df8b14acaee42d211ab45692699ab8ba5
+
+python scripts/balancer_demo.py

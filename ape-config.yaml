@@ -1,0 +1,39 @@
+name: dynamo_vault
+
+plugins:
+  - name: vyper
+  - name: polygon
+  - name: alchemy
+
+default_ecosystem: ethereum
+
+ethereum:
+  goerli:
+    default_provider: geth
+  mainnet:
+    default_provider: geth
+
+polygon:
+  mainnet:
+    default_provider: geth
+
+geth:
+  ethereum:
+    goerli:
+      uri: https://rpc.ankr.com/eth_goerli
+    mainnet:
+      uri: https://rpc.ankr.com/eth
+
+  polygon:
+    mainnet:
+      uri: https://rpc.ankr.com/polygon
+    mumbai:
+      uri: https://rpc.ankr.com/polygon_mumbai
+
+hardhat:
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: alchemy
+        block_number: 16581700
+  fork_request_timeout: 1200

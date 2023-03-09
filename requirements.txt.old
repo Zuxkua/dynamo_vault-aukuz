@@ -1,0 +1,9 @@
+# pygit2 & PyGithub are specified specifically because of an ssl package error.
+pygit2==1.10.1 
+PyGithub==1.56
+
+#eth-ape @ git+https://github.com/ApeWorX/ape.git#egg=eth-ape
+eth-ape @ git+https://github.com/sajal/ape.git#egg=eth-ape
+
+ape-hardhat
+pytest
